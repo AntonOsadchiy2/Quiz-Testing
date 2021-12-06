@@ -14,4 +14,14 @@ public class LevelData //класс для хранения данных одн�
     }
     public Sprite GetSprite(int index){ return Answers[index]; }
     public string GetRightAnswer(){ return RightAnswer; }
+
+    public void PrintAnswers()
+    {
+        string temp = "Ответы этого уровня:";
+        for (int i = 0; i < Answers.Count; i++)
+        {
+            temp += " " + Answers[i].name;
+        }
+        Debug.Log(temp);
+    }
 }

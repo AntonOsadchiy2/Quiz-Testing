@@ -6,12 +6,12 @@ using UnityEngine.UI;
 
 public static class AnimationManager //класс анимаций Dotween
 {
-    public static void SquareSpawnBounce(GameObject Square)
+    public static void SquareSpawnBounce(GameObject Square, float delay)
     {
         if (Square != null)
         {
             Square.transform
-                .DOScale(1f, 2f)
+                .DOScale(1f, delay)
                 .SetEase(Ease.InBounce);
         }
     }
